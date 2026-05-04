@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: check-patches-apply.py
-      run: python3 scripts/check-patches-apply.py --patches-dir patches/android12-5.4 --repo https://android.googlesource.com/kernel/common.git --ref android11-5.4
+      run: python3 scripts/check-patches-apply.py --patches-dir patches/android12-5.4 --repo https://android.googlesource.com/kernel/common.git --ref android12-5.4
   check_cache:
     name: Check Cache
     runs-on: ubuntu-latest
